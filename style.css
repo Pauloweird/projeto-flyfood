@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor-destque:#E61207;
+    --cor-padrao:#f8f8f8;
+
+    --fonte-padrao:"Bebas Neue", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: ari;
+}
+
+header {
+    background-color: var(--cor-destque);
+    padding: 20px;
+    height: 230px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 10vh;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.links {
+    background-color: var(--cor-destque);
+    padding: 10px;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.links a {
+    font-size: 3vh ;
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    background-color: var(--cor-padrao);
+    padding: 7px;
+    color: var(--cor-destque);
+    border-radius: 7px;
+}
+
+#destaque {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background: var(--cor-destque) url(https://www.cozinhadonabenta.com.br/wp-content/uploads/2019/05/PIZZA-DE-MUSSARELA.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#destaque p{
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+
+}
+
+
+#lounge {
+    margin-top: 20px;
+    background: var(--cor-destque) url(https://media.istockphoto.com/id/1053854126/pt/foto/all-you-can-eat-sushi.jpg?s=612x612&w=0&k=20&c=3RMMIy05HDxFzejgbMWSgxmh72ZhEwm3oyUNU-tTrqY=) center center no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+#lounge p {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+h2{
+    font-family: var(--fonte-padrao);
+    font-size: 4vh;
+    background-color: var(--cor-destque);
+    margin-top: 13px;
+    color: var(--cor-padrao);
+    padding: 10px;
+}
+
+article h3 {
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor-destque), transparent);
+    font-size: 4vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#categorias {
+    background-color: var(--cor-destque);
+}
+
+#categorias ul{
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+    list-style: none;
+}
+
+.abas a {
+    text-decoration: none;
+    color:white;
+}
+
+.abas a:hover {
+    text-decoration: underline;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    color: var(--cor-destque);
+}
+
+
+#sobre {
+    text-align: center;
+}
+#sobre p{
+    padding: 10px;
+    background-color: var(--cor-destque);
+    color: white;
+}
