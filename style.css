@@ -86,6 +86,7 @@ header p{
 }
 
 #destaque p{
+    font-family: var(--fonte-paragrafos);
     border-radius: 7px;
     margin-left: 10px;
     padding: 10px;
@@ -102,9 +103,10 @@ header p{
     margin-top: 20px;
     background: var(--cor-destque) url(https://media.istockphoto.com/id/1053854126/pt/foto/all-you-can-eat-sushi.jpg?s=612x612&w=0&k=20&c=3RMMIy05HDxFzejgbMWSgxmh72ZhEwm3oyUNU-tTrqY=) center center no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 340px;
 }
 #lounge p {
+    font-family: var(--fonte-paragrafos);
     border-radius: 7px;
     padding: 10px;
     margin-left: 10px;
@@ -123,12 +125,12 @@ h2{
 }
 
 article h3 {
+    box-shadow: 3px -1px 3px rgba(0, 0, 0, 0.541);
     font-family: var(--fonte-padrao);
     font-weight: bold;
     color: white;
     background-image: linear-gradient(to right, var(--cor-destque), transparent);
     font-size: 4vh;
-    text-align: center;
     padding: 20px;
 }
 
@@ -139,6 +141,7 @@ article h3 {
     margin-top: 13px;
 }
 #sobre p{
+    font-family: var(--fonte-titulos);
     padding: 10px;
     background-color: var(--cor-destque);
     color: white;
