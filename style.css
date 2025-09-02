@@ -26,24 +26,45 @@ body {
 
 header {
     background-color: var(--cor-destque);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    height: 230px;
 }
 
-header h1 {
+
+.logo h1 {
     font-family: var(--fonte-titulos);
     color: white;
     text-align: center;
-    margin-top: 70px;
-    font-size: 10vh;
+    font-size: 28px;
 }
 
-header p{
+.logo p{
     font-family: var(--fonte-paragrafos);
     color: white;
     text-align: center;
-    font-size: 3vh;
+    font-size: 14px;
 }
+
+.menu-topo ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-topo a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-topo a:hover {text-decoration: underline;}
+
 #categorias {
     background-color: var(--cor-destque);
 }
@@ -121,6 +142,22 @@ h2{
 
 
 #lounge p {
+    margin: auto;
+    font-family: var(--fonte-paragrafos);
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+#frio {
+    background: var(--cor-destque) url(https://media.istockphoto.com/id/1922618743/pt/foto/assorted-of-scoops-ice-cream-colorful-set-of-ice-cream-of-different-flavours-side-view-of-ice.jpg?s=612x612&w=0&k=20&c=PRy4oOFuEd6InzXvJZSvEsXRI5T4K3tED9vCX_mm-HA=) center center no-repeat;
+    background-size: cover;
+}
+
+#frio p {
     margin: auto;
     font-family: var(--fonte-paragrafos);
     border-radius: 7px;
