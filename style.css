@@ -222,3 +222,85 @@ footer p {
     color: white;
     font-weight: bold;
 }
+
+/* ENTRAR*/
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-family: var(--fonte-titulos);
+    margin-bottom: 20px;
+}
+
+/*Formulario*/
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-login label {
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}
+
+.form-login input {
+    padding: 10px;
+    border: 1px solid #add;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: var(--fonte-paragrafos);
+}
+
+/* checkbox*/
+
+.lembrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+/*botão*/
+
+.form-login button {
+    background-color: var(--cor-destque);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-login button:hover {
+    background-color: #b50d05;
+    transform: scale(1.03);
+}
+
+/* Link cadastro*/
+
+.cadastro {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cadastro a {
+    color: var(--cor-destque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
