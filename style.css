@@ -151,22 +151,6 @@ div.card p {
     background-size: cover;
 }
 
-#frio {
-    background: var(--cor-destque) url(https://media.istockphoto.com/id/1922618743/pt/foto/assorted-of-scoops-ice-cream-colorful-set-of-ice-cream-of-different-flavours-side-view-of-ice.jpg?s=612x612&w=0&k=20&c=PRy4oOFuEd6InzXvJZSvEsXRI5T4K3tED9vCX_mm-HA=) center center no-repeat;
-    background-size: cover;
-}
-
-#frio p {
-    margin: auto;
-    font-family: var(--fonte-paragrafos);
-    border-radius: 7px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 270px;
-    background-color: rgba(0, 0, 0, 0.589);
-    color: white;
-}
-
 .restaurantes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
