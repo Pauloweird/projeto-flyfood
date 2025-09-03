@@ -96,7 +96,7 @@ header {
     padding: 8px;
     border-radius: 7px;
     color: var(--cor-destque);
-    transform: scale(1.05s);
+    transform: scale(1.05);
 }
 
 h2{
@@ -107,12 +107,21 @@ h2{
     padding: 10px;
 }
 
+div.card p {
+    margin: auto;
+    font-family: var(--fonte-paragrafos);
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
 .principal {
     margin-top: 10px;
     padding-left: 40px;
 }
-
-
 
 #destaque {
     padding-bottom: 10px;
@@ -121,35 +130,10 @@ h2{
     background-size: cover;
 }
 
-#destaque p{
-    font-family: var(--fonte-paragrafos);
-    border-radius: 7px;
-    margin: auto;
-    padding: 10px;
-    margin-top: 10px;
-    width: 270px;
-    background-color: rgba(0, 0, 0, 0.589);
-    color: white;
-
-}
-
-
 #lounge {
     margin-top: 20px;
     background: var(--cor-destque) url(https://media.istockphoto.com/id/1053854126/pt/foto/all-you-can-eat-sushi.jpg?s=612x612&w=0&k=20&c=3RMMIy05HDxFzejgbMWSgxmh72ZhEwm3oyUNU-tTrqY=) center center no-repeat;
     background-size: cover;
-}
-
-
-#lounge p {
-    margin: auto;
-    font-family: var(--fonte-paragrafos);
-    border-radius: 7px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 270px;
-    background-color: rgba(0, 0, 0, 0.589);
-    color: white;
 }
 
 #frio {
@@ -157,15 +141,14 @@ h2{
     background-size: cover;
 }
 
-#frio p {
-    margin: auto;
-    font-family: var(--fonte-paragrafos);
-    border-radius: 7px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 270px;
-    background-color: rgba(0, 0, 0, 0.589);
-    color: white;
+#batata {
+    background: var(--cor-destque) url(https://gastronomiacarioca.zonasul.com.br/wp-content/uploads/2023/01/batata_frita_caseira_ilustrativa_zona_sul.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#sabor {
+    background: var(--cor-destque) url(https://img.freepik.com/fotos-premium/yakisoba-noodles-prato-de-yakisoba-com-carne-de-frango-e-vegetais_434193-1634.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .restaurantes {
@@ -227,4 +210,15 @@ div h3 {
     padding: 10px;
     background-color: var(--cor-destque);
     color: white;
+}
+
+footer {
+    background-color: var(--cor-destque);
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
