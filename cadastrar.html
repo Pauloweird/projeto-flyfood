@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar - FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cadastrar {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .cadastrar h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cadastrar form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cadastrar label {
+            margin: 8px 0 4px;
+            font-weight: bold;
+        }
+
+        .cadastrar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .cadastrar button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .cadastrar button:hover {
+            background-color: #b90e05;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        p a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="cadastrar">
+            <h2>Criar conta</h2>
+            <form action="processar_cadastro.php" method="post">
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="Senha" name="senha" required>
+                </div>
+
+                <div>
+                    <label for="confirmar">Confirmar</label>
+                    <input type="password" id="confirmar" name="confirmar" required>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <p>
+                    Já tem uma conta? <a href="entrar.html">Entrar</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><p>&copy; 2025 FlyFood - Criado por Paulo</p></p>
+    </footer>
+</body>
+</html>
