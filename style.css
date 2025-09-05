@@ -79,6 +79,11 @@ header {
 
 #categorias h2 {
     text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 4vh;
+    background-color: var(--cor-destque);
+    color: var(--cor-padrao);
+    padding: 10px;
 }
 
 .abas a {
@@ -99,7 +104,11 @@ header {
     transform: scale(1.05);
 }
 
-h2{
+.principal{
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    border-radius: 10px;
     font-family: var(--fonte-padrao);
     font-size: 4vh;
     background-color: var(--cor-destque);
@@ -204,11 +213,48 @@ div h3 {
 #sobre {
     text-align: center;
     margin-top: 13px;
+    font-family: var(--fonte-padrao);
+    font-size: 2vh;
+    background-color: var(--cor-destque);
+    color: var(--cor-padrao);
+    padding: 10px;
 }
 #sobre p{
     font-family: var(--fonte-titulos);
     padding: 10px;
     background-color: var(--cor-destque);
+    color: white;
+}
+
+
+#sobre form {
+    padding: 20px;
+    background-color: var(--cor-destque);
+}
+
+#sobre form label {
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+#sobre form input {
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+#enviar {
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 7px;
+    color: var(--cor-destque);
+    font-weight: bold;
+}
+
+#enviar:hover {
+    background-color: #b50d05;
     color: white;
 }
 
