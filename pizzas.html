@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas - FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pizza-item {
+            background: red url(https://i.pinimg.com/736x/42/0b/89/420b89eb4bcccaf3d03e428df5e85c21.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        div p {
+            font-family: var(--fonte-paragrafos);
+        }
+
+        div .preco {
+            font-family: var(--fonte-padrao);
+        }
+
+
+        .pizza-me {
+            background: red url(https://i.pinimg.com/736x/42/0b/89/420b89eb4bcccaf3d03e428df5e85c21.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .pizza-fra {
+            background: red url(https://i.pinimg.com/736x/42/0b/89/420b89eb4bcccaf3d03e428df5e85c21.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .cardapio {
+            padding: 20px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .cardapio h2 {
+            border-radius: 10px;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            font-size: 2.4em;
+            background-color: var(--cor-destque);
+            color: var(--cor-padrao);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid-pizzas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+
+        .pizza-item {
+            border: 2px solid #d4af27;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .pizza-item:hover {
+            transform: scale(1.05);
+        }
+
+        .pizza-item p {
+            font-size: 0.9em;
+            background-color:  rgba(0, 0, 0, 0.397);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .pizza-me {
+            border: 2px solid #d4af27;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .pizza-me:hover {
+            transform: scale(1.05);
+        }
+        
+        .pizza-me p{
+            font-size: 0.9em;
+            background-color:  rgba(0, 0, 0, 0.397);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .pizza-fra {
+            border: 2px solid #d4af27;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .pizza-fra:hover {
+            transform: scale(1.05);
+        }
+
+        .pizza-fra p {
+            font-size: 0.9em;
+            background-color:  rgba(0, 0, 0, 0.397);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .preco {
+            display: block;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: red;
+            color: white;
+            border: none;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .preco:hover {
+            background-color: #b50d05;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+    </header>
+
+    <nav id="categorias">
+            <h2>Categorias</h2>
+            <ul class="abas">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Hambúrguer</a></li>
+                <li><a href="#">Sorvetes</a></li>
+                <li><a href="#">Sushi</a></li>
+                <li><a href="#">Bebidas</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <section id="pizzas" class="cardapio">
+            <h2>Pizzas 🍕</h2>
+
+                <div class="grid-pizzas">
+                    <div class="pizza-item">
+                        <h3>Pizza de Calabresa</h3>
+                        <img src="https://png.pngtree.com/png-clipart/20241117/original/pngtree-pizza-pepperoni-png-image_17190225.png" alt="Pizza de calabresa">
+                        <p>Molho de tomate,mussarela, calabresa e cebola</p>
+                        <button class="preco">R$ 39,90</button>
+                    </div>
+                    <div class="pizza-me">
+                        <h3>Pizza de Maguerita</h3>
+                        <img src="https://png.pngtree.com/png-clipart/20250531/original/pngtree-delicious-margherita-pizza-with-fresh-basil-and-cherry-tomatoes-png-image_21104516.png" alt="Pizza de meguerita">
+                        <p>molho de tomate, mussarela, tomate e manjericão fresco.</p>
+                        <button class="preco">R$ 42,90</button>
+                    </div>
+                    <div class="pizza-fra">
+                        <h3>Frango com Catupiry</h3>
+                        <img src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-cheese-and-chicken-pizza-png-image_14698365.png" alt="Pizza de Frango">
+                        <p>Frango desfiado, catupiry original e orégano.</p>
+                        <button class="preco">R$ 44,90</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Nosso site conecta você aos melhores restaurantes da cidade, valorizando o comércio local.</p>
+            <form action="#" method="post">
+                <label for="coments">comentários:</label>
+                <input type="coments" name="comentarios" placeholder="Digite aqui">
+    
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+            <p>&copy; 2025 FlyFood - Criado por Paulo</p>
+    </footer>
+</body>
+</html>
