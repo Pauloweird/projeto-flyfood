@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambúrguer - FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        img {
+            width: 100%;
+        }
+
+        div button {
+            font-family: var(--fonte-padrao);
+            font-weight: bold;
+            margin: auto;
+            display: block;
+            background-color: var(--cor-destque);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        div button:hover {
+            background-color: #b50d05;
+        }
+
+
+        .cardapio {
+            padding: 20px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cardapio h2 {
+            font-size: 2.9em;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            background-color: var(--cor-destque);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .grid-hamb {
+            display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+             gap: 25px;
+        }
+
+        .hamb-item {
+            background: red url(https://i.pinimg.com/736x/4b/5b/41/4b5b41eafe60d5ea2f9cef23a8970020.jpg) center bottom;
+            background-size: cover;
+            border: 2px solid #014907;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .hamb-item p {
+            font-size: 0.9em;
+            background-color:  rgba(0, 0, 0, 0.397);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="entrar.html">Entrar</a></li>
+                <li><a href="cadastrar.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="categorias">
+            <h2>Categorias</h2>
+            <ul class="abas">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pizzas.html">Pizza</a></li>
+                <li><a href="#">Sorvetes</a></li>
+                <li><a href="#">Sushi</a></li>
+                <li><a href="#">Bebidas</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section id="hamburguer" class="cardapio">
+            <h2>Hambúrguer 🍔</h2>
+            <div class="grid-hamb">
+                <div class="hamb-item">
+                    <h3>Artesanal</h3>
+                    <img src="https://img.pikbest.com/png-images/20250518/gourmet-burger-with-cheese-lettuce-tomato-onion-sesame-bun_11695919.png!bw700" alt="hamburguer artesanal">
+                    <p>Sabor único, carne suculenta e qualidade em cada mordida.</p>
+                    <button>R$ 20,00</button>
+                </div>
+
+                <div class="hamb-item">
+                    <h3>X-TUDO</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20250515/original/pngtree-juicy-double-cheeseburger-with-melted-cheese-and-splashing-sauce-png-image_20978523.png" alt="x-tudo">
+                    <p>Completo, recheado e irresistível: tudo o que você gosta em um só lanche!</p>
+                    <button>R$ 25,00</button>
+                </div>
+
+                <div class="hamb-item">
+                    <h3>X-BACON</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20250522/original/pngtree-cheeseburger-with-bacon-and-sauce-dripping-png-image_21056342.png" alt="x-bacon">
+                    <p>Clássico, crocante e cheio de sabor em cada mordida.</p>
+                    <button>R$ 27,00</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Nosso site conecta você aos melhores restaurantes da cidade, valorizando o comércio local.</p>
+
+            <form action="#" method="post">
+                <label for="coments">Comentários</label>
+                <input type="coments" name="comentarios" placeholder="Digite aqui">
+
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
