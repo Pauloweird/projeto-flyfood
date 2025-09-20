@@ -59,7 +59,7 @@ header {
     color: white;
     text-decoration: none;
     font-family: var(--fonte-padrao);
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -106,9 +106,7 @@ header {
 
 .principal{
     text-align: center;
-    margin: auto;
     max-width: 600px;
-    border-radius: 10px;
     font-family: var(--fonte-padrao);
     font-size: 4vh;
     background-color: var(--cor-destque);
@@ -169,7 +167,7 @@ div.card p {
 
 .card {
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.479); 
     overflow: hidden;
     text-align: center;
     transition: 0.3s;
