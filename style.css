@@ -105,6 +105,7 @@ header {
 }
 
 .principal{
+    margin: auto;
     text-align: center;
     max-width: 600px;
     font-family: var(--fonte-padrao);
@@ -112,6 +113,10 @@ header {
     background-color: var(--cor-destque);
     color: var(--cor-padrao);
     padding: 10px;
+    margin-top: 10px;
+    padding-left: 40px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.377);
 }
 
 div.card p {
@@ -125,10 +130,6 @@ div.card p {
     color: white;
 }
 
-.principal {
-    margin-top: 10px;
-    padding-left: 40px;
-}
 
 #destaque {
     padding-bottom: 10px;

@@ -88,7 +88,7 @@
             <form action="processar_cadastro.php" method="post">
                 <div>
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required maxlength="30">
                 </div>
 
                 <div>
@@ -103,12 +103,12 @@
 
                 <div>
                     <label for="senha">Senha</label>
-                    <input type="password" id="Senha" name="senha" required>
+                    <input type="password" id="Senha" name="senha" required maxlength="8">
                 </div>
 
                 <div>
                     <label for="confirmar">Confirmar</label>
-                    <input type="password" id="confirmar" name="confirmar" required>
+                    <input type="password" id="confirmar" name="confirmar" required maxlength="8">
                 </div>
 
                 <button type="submit"><a href="index.html">Cadastrar</a></button>
