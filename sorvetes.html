@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hambúrguer - FlyFood</title>
+    <title>Sorvetes - FlyFood</title>
     <link rel="stylesheet" href="style.css">
     <style>
-
-        img {
+         img {
             width: 100%;
         }
 
@@ -48,22 +47,22 @@
             border-radius: 10px;
         }
 
-        .grid-hamb {
+        .grid-picole {
             display: grid;
              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
              gap: 25px;
         }
 
-        .hamb-item {
-            background: red url(https://i.pinimg.com/736x/4b/5b/41/4b5b41eafe60d5ea2f9cef23a8970020.jpg) center bottom;
-            background-size: cover;
-            border: 2px solid #014907;
-            border-radius: 15px;
-            padding: 15px;
+        .picole-item {
+           background: red url(https://i.pinimg.com/736x/6e/fb/70/6efb707d614c753ea52997452229b02a.jpg) no-repeat center center;
+           background-size: cover;
+           border: 1px solid rgb(5, 195, 243);
+           border-radius: 15px;
+           padding: 15px;
             transition: transform 0.3s;
         }
 
-        .hamb-item p {
+        .picole-item p {
             font-family: var(--fonte -paragrafos);
             font-size: 0.9em;
             background-color:  rgba(0, 0, 0, 0.397);
@@ -82,7 +81,6 @@
         <nav class="menu-topo">
             <ul>
                 <li><a href="entrar.html">Entrar</a></li>
-                <li><a href="cadastrar.html">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
@@ -92,35 +90,35 @@
             <ul class="abas">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pizzas.html">Pizza</a></li>
-                <li><a href="#">Sorvetes</a></li>
+                <li><a href="hamburguer.html">hambúrguer</a></li>
                 <li><a href="#">Sushi</a></li>
                 <li><a href="#">Bebidas</a></li>
             </ul>
     </nav>
 
     <main>
-        <section id="hamburguer" class="cardapio">
-            <h2>Hambúrguer 🍔</h2>
-            <div class="grid-hamb">
-                <div class="hamb-item">
-                    <h3>Artesanal</h3>
-                    <img src="https://img.pikbest.com/png-images/20250518/gourmet-burger-with-cheese-lettuce-tomato-onion-sesame-bun_11695919.png!bw700" alt="hamburguer artesanal">
-                    <p>Sabor único, carne suculenta e qualidade em cada mordida.</p>
-                    <button>R$ 20,00</button>
+        <section id="" class="cardapio">
+            <h2>Sorvetes 🍦</h2>
+            <div class="grid-picole">
+                <div class="picole-item">
+                    <h3>Picolé</h3>
+                    <img src="https://png.pngtree.com/png-vector/20250808/ourmid/pngtree-delicious-flavored-fruit-popsicles-png-image_16790712.webp" alt="Imagem de sorvete piole">
+                    <p>Refrescante, prático e saboroso. A escolha perfeita para se refrescar em qualquer momento do dia!</p>
+                    <button>R$ 8,00</button>
                 </div>
 
-                <div class="hamb-item">
-                    <h3>X-TUDO</h3>
-                    <img src="https://png.pngtree.com/png-clipart/20250515/original/pngtree-juicy-double-cheeseburger-with-melted-cheese-and-splashing-sauce-png-image_20978523.png" alt="x-tudo">
-                    <p>Completo, recheado e irresistível: tudo o que você gosta em um só lanche!</p>
-                    <button>R$ 25,00</button>
+                <div class="picole-item">
+                    <h3>Casquinha</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20241221/original/pngtree-ice-cream-cone-png-image_18121949.png" alt="Imagem de sorvete casquinha">
+                    <p>Crocante por fora, cremoso por dentro. O clássico que nunca sai de moda!</p>
+                    <button>R$ 10,00</button>
                 </div>
 
-                <div class="hamb-item">
-                    <h3>X-BACON</h3>
-                    <img src="https://png.pngtree.com/png-clipart/20250522/original/pngtree-cheeseburger-with-bacon-and-sauce-dripping-png-image_21056342.png" alt="x-bacon">
-                    <p>Clássico, crocante e cheio de sabor em cada mordida.</p>
-                    <button>R$ 27,00</button>
+                <div class="picole-item">
+                    <h3>Açai</h3>
+                    <img src="https://lp.sorvfoods.com.br/wp-content/uploads/2024/09/acai.png" alt="imagem de sorvete de açai">
+                    <p>Refrescante, energético e cheio de sabor amazônico em cada colherada!</p>
+                    <button>R$ 15,00</button>
                 </div>
             </div>
         </section>
@@ -131,7 +129,7 @@
 
             <form action="#" method="post">
                 <label for="icoments">Comentários</label>
-                <input type="coments" name="comentarios" id="icoments" placeholder="Digite aqui">
+                <input type="text" name="comentarios" id="icoments" placeholder="Digite aqui">
 
                 <button type="submit" id="enviar">Enviar</button>
             </form>
