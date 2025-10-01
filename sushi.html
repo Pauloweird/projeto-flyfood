@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi - FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 100%;
+        }
+
+        div button {
+            display: block;
+            margin: auto;
+            font-weight: bold;
+            font-family: var(--fonte-padrao);
+            background-color: var(--cor-destque);
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 10px;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b50d05;
+        }
+
+        .cardapio {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .cardapio h2 {
+            font-size: 2.9em;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            background-color: var(--cor-destque);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .grid-sushi {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .sushi-item {
+            background: red url(https://i.pinimg.com/736x/6d/57/53/6d5753b6b1df0eae3c3a921f4a792a06.jpg) no-repeat center center;
+            background-size: cover;
+            border: 1px solid rgb(2, 206, 2);
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .sushi-item p {
+            background-color: rgba(0, 0, 0, 0.397);
+            color: white;
+            font-size: 0.9em;
+            font-family:  var(--fonte -paragrafos);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+
+         <nav class="menu-topo">
+            <ul>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="categorias">
+        <h2>Categorias</h2>
+            <ul class="abas">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pizzas.html">Pizza</a></li>
+                <li><a href="hamburguer.html">hambúrguer</a></li>
+                <li><a href="sorvetes.html">Sorvetes</a></li>
+                <li><a href="#">Bebidas</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section class="cardapio">
+            <h2>Sushis 🍣</h2>
+            <div class="grid-sushi">
+                <div class="sushi-item">
+                    <h3>Nigiri</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-nigiri-sushi-asian-food-png-image_13355918.png" alt="imagem de sushi nigiri">
+                    <p>Arroz moldado à mão com a delicadeza da culinária japonesa</p>
+                    <button>R$ 9,00</button>
+                </div>
+
+                <div class="sushi-item">
+                    <h3>Temaki</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-temaki-japanese-food-japanese-cuisine-png-image_13376249.png" alt="imagem de sushi temaki">
+                    <p>Cone de alga crocante recheado com peixe fresco e arroz temperado.</p>
+                    <button>R$ 10,00</button>
+                </div>
+
+                <div class="sushi-item">
+                    <h3>Gukan</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-gunkan-sushi-asian-food-png-image_14691494.png" alt="imagem de sushi gunkan">
+                    <p>Arroz envolto em alga, recheado com coberturas frescas e saborosas.</p>
+                    <button>R$ 10,00</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Nosso site conecta você aos melhores restaurantes da cidade, valorizando o comércio local</p>
+
+            <form action="#" method="post">
+                <label for="icoments">Comentários:</label>
+                <input type="text" name="comentarios" id="icoments" placeholder="Digite aqui">
+
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
