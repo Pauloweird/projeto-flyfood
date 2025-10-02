@@ -69,6 +69,9 @@
             padding: 10px;
             border-radius: 10px;
         }
+        #card:hover {
+            transform: scale(1.02);
+        }
     </style>
 <body>
     <header>
@@ -91,7 +94,7 @@
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="hamburguer.html">hambúrguer</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
-                <li><a href="#">Bebidas</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
             </ul>
     </nav>
 
@@ -99,21 +102,21 @@
         <section class="cardapio">
             <h2>Sushis 🍣</h2>
             <div class="grid-sushi">
-                <div class="sushi-item">
+                <div class="sushi-item" id="card">
                     <h3>Nigiri</h3>
                     <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-nigiri-sushi-asian-food-png-image_13355918.png" alt="imagem de sushi nigiri">
                     <p>Arroz moldado à mão com a delicadeza da culinária japonesa</p>
                     <button>R$ 9,00</button>
                 </div>
 
-                <div class="sushi-item">
+                <div class="sushi-item" id="card">
                     <h3>Temaki</h3>
                     <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-temaki-japanese-food-japanese-cuisine-png-image_13376249.png" alt="imagem de sushi temaki">
                     <p>Cone de alga crocante recheado com peixe fresco e arroz temperado.</p>
                     <button>R$ 10,00</button>
                 </div>
 
-                <div class="sushi-item">
+                <div class="sushi-item" id="card">
                     <h3>Gukan</h3>
                     <img src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-gunkan-sushi-asian-food-png-image_14691494.png" alt="imagem de sushi gunkan">
                     <p>Arroz envolto em alga, recheado com coberturas frescas e saborosas.</p>
@@ -134,5 +137,8 @@
             </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 FlyFood - Criado por Paulo</p>
+    </footer>
 </body>
 </html>

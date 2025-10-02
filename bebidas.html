@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .cardapio {
+            padding: 15px;
+            text-align: center;
+        }
+        .cardapio h2 {
+            background-color: var(--cor-destque);
+            color: white;
+            padding: 10px;
+            font-size: 2.9em;
+            font-family: var(--fonte-padrao);
+            margin-bottom: 10px;
+            border-radius: 10px;        
+        }
+
+        .grid-bebidas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .bebidas-item {
+            background: red url(https://i.pinimg.com/736x/55/2c/1c/552c1c67b4384d4d334a54895abc02e7.jpg) no-repeat center center;
+            background-size: cover;
+            padding: 15px;
+            border: 1px solid rgb(0, 255, 255);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .bebidas-item p {
+            background-color: rgba(0, 0, 0, 0.397);
+            color: white;  
+            padding: 10px;
+            border-radius: 7px;
+            font-size: 0.9em;
+            font-family:  var(--fonte -paragrafos);     
+         }
+
+         div button {
+            display: block;
+            background-color: var(--cor-destque);
+            margin: auto;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            font-family: var(--fonte-padrao);
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+         }
+
+         div button:hover {
+            background-color:#b50d05 ;
+         }
+
+         #card:hover {
+            transform: scale(1.02);
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="categorias">
+        <h2>Categorias</h2>
+            <ul class="abas">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pizzas.html">Pizza</a></li>
+                <li><a href="hamburguer.html">hambúrguer</a></li>
+                <li><a href="sorvetes.html">Sorvetes</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section class="cardapio">
+            <h2>Bebidas 🍹</h2>
+            <div class="grid-bebidas">
+                <div class="bebidas-item" id="card">
+                    <h3>Suco de laranja</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20241004/original/pngtree-orange-juice-in-a-glass-with-straw-and-an-png-image_16198060.png" alt="Suco de laranja">
+                    <p>Suco de laranja natural, cheio de sabor e vitamina C</p>
+                    <button>R$ 5,00</button>
+                </div>
+
+                <div class="bebidas-item" id="card">
+                    <h3>Suco de goiaba</h3>
+                    <img src="https://png.pngtree.com/png-clipart/20240610/original/pngtree-guava-juice-in-a-glass-isolated-on-transparent-background-png-image_15295755.png" alt="imagem de suco de goiaba">
+                    <p>Suco de goiaba cremoso e adocicado, cheio de frescor</p>
+                    <button>R$ 5,00</button>
+                </div>
+
+                <div class="bebidas-item" id="card">
+                    <h3>Coca-cola</h3>
+                    <img src="https://static.vecteezy.com/system/resources/previews/036/573/453/non_2x/a-can-of-coca-cola-drink-isolated-free-png.png" alt="imagem de coca-cola">
+                    <p>Coca-Cola gelada, sabor único que combina com qualquer momento</p>
+                    <button>R$ 7,00</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Nosso site conecta você aos melhores restaurantes da cidade, valorizando o comércio local</p>
+
+            <form action="#" method="post">
+                <label for="icoments">Comentários:</label>
+                <input type="text" name="comentarios" id="icoments" placeholder="Digite aqui" minlength="30">
+
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FlyFood - Criado por Paulo</p>
+    </footer>
+</body>
+</html>
