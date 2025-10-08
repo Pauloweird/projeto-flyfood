@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Pedidos | FlyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .lista-pedidos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .pedido-card {
+            background-color: #111;
+            color: white;
+            border: 2px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 0px 12px rgba(255, 215, 0, 0.3);
+            transition: 0.3s ease;
+        }
+
+        .pedido-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+        }
+
+        .pedido-card h3 {
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        .detalhes {
+            margin-top: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            font-family: var(--fonte-padrao);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .detalhes:hover {
+            background-color: gold;
+            color: black;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FlyFood</h1>
+            <p>Seu pedido chega voando</p>
+        </div>
+
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="categorias">
+        <h2>Categorias</h2>
+            <ul class="abas">
+                <li><a href="pizzas.html">Pizza</a></li>
+                <li><a href="hamburguer.html">Hambúrguer</a></li>
+                <li><a href="sorvetes.html">Sorvetes</a></li>
+                <li><a href="sushi.html">Sushi</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <h2 class="principal">🛍️Meus Pedidos</h2>
+        <section class="lista-pedidos">
+            <div class="pedido-card">
+                <h3>Pedido #001</h3>
+                <p><strong>Restaurante:</strong> Casa D’Pizza</p>
+                <p><strong>Itens:</strong> 1 Pizza Calabresa, 1 Refrigerante</p>
+                <p><strong>Status:</strong> ✅ Entregue</p>
+                <p><strong>Total:</strong> R$ 49,90</p>
+                <button class="detalhes">Ver detalhes</button>
+            </div>
+
+            <div class="pedido-card">
+                <h3>Pedido #002</h3>
+                <p><strong>Restaurante:</strong> Marina Lounge</p>
+                <p><strong>Itens:</strong>1 Sushi Combo, 1 Suco de Laranja</p>
+                <p><strong>Status:</strong>🚗 A caminho</p>
+                <p><strong>Total:</strong> R$ 67,00</p>
+                <button class="detalhes">Ver detalhes</button>
+            </div>
+
+            <div class="pedido-card">
+                <h3>Pedido #003</h3>
+                <p><strong>Restaurante:</strong> Beijo Frio</p>
+                <p><strong>Itens:</strong> 2 Sorvetes Artesanais</p>
+                <p><strong>Status:</strong>🕐 Em preparo</p>
+                <p><strong>Total:</strong> R$ 22,00</p>
+                <button class="detalhes">Ver detalhes</button>
+            </div>
+        </section>
+
+        <footer>
+        <p>&copy; 2025 FlyFood - Criado por Paulo</p>
+        </footer>
+    </main>
+</body>
+</html>
