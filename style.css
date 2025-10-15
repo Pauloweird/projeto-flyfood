@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--cor-padrao);
+    background: linear-gradient(circle at top, #fff8f0, #f8f8f8);
 }
 
 header {
@@ -37,6 +37,10 @@ header {
     align-items: center;
     padding: 20px;
     padding-right: 5px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 
@@ -44,7 +48,16 @@ header {
     font-family: var(--fonte-titulos);
     color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
+    background: linear-gradient(45deg, #ffd700, #fff, #ffd700 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    animation: brilho 4s linear infinite;
+}
+@keyframes brilho {
+    0% {background-position: 0%;}
+    100% {background-position: 200%;}
 }
 
 .logo p{
@@ -63,6 +76,7 @@ header {
 }
 
 .menu-topo a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-family: var(--fonte-padrao);
@@ -70,6 +84,20 @@ header {
     transition: 0.3s;
 }
 
+.menu-topo a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: #ffd700;
+    transition: 0.3s ease;
+}
+
+.menu-topo a:hover::after {
+    width: 100%;
+}
 .menu-topo a:hover {text-decoration: underline;
 }
 
@@ -206,7 +234,7 @@ div.card p {
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.479); 
     overflow: hidden;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .card img {
@@ -215,7 +243,8 @@ div.card p {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .card button {
@@ -233,6 +262,7 @@ div.card p {
 
 .card button:hover {
     background-color: #b50d05;
+    transform: scale(1.05);
 }
 
 div h3 {
@@ -249,21 +279,21 @@ div h3 {
     margin-top: 13px;
     font-family: var(--fonte-padrao);
     font-size: 2vh;
-    background-color: var(--cor-destque);
+    background: linear-gradient(90deg, #900505, #e91207);
     color: var(--cor-padrao);
     padding: 10px;
 }
 #sobre p{
     font-family: var(--fonte-titulos);
     padding: 10px;
-    background-color: var(--cor-destque);
+    background: linear-gradient(90deg, #900505, #e91207);;
     color: white;
 }
 
 
 #sobre form {
     padding: 20px;
-    background-color: var(--cor-destque);
+    background: linear-gradient(90deg, #900505, #e91207);;
 }
 
 #sobre form label {
@@ -293,8 +323,14 @@ div h3 {
 }
 
 footer {
-    background-color: var(--cor-destque);
-    padding: 20px;
+    background: linear-gradient(90deg, #900505, #e91207);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-top: 2px solid #ffd700;
 }
 
 
