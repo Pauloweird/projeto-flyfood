@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
 
         img {
@@ -68,7 +69,7 @@
         }
     </style>
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <div class="logo">
             <h1>FlyFood</h1>
@@ -85,13 +86,14 @@
 
     <nav id="categorias">
             <h2>Categorias</h2>
-            <ul class="abas">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu class="abas" id="itens">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
                 <li><a href="sushi.html">Sushi</a></li>
                 <li><a href="bebidas.html">Bebidas</a></li>
-            </ul>
+            </menu>
     </nav>
 
     <main>

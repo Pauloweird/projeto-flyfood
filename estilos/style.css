@@ -113,13 +113,14 @@ header {
     background: linear-gradient(90deg, #E61207, #900505);
 }
 
-#categorias ul{
-    justify-content: center;
-    display: flex;
-    padding: 10px;
-    gap: 20px;
-    list-style: none;
+#burguer {
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
 }
+
 
 #categorias h2 {
     text-align: center;
@@ -130,10 +131,24 @@ header {
     padding: 10px;
 }
 
-.abas a {
+menu.abas{
+    text-align: center;
+    justify-content: center;
+    display: none;
+    padding: 10px;
+    gap: 20px;
+    list-style: none;
+}
+
+menu.abas li {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+menu.abas a {
     font-size: 14px;
     font-family: var(--fonte-titulos);
-    text-align: center;
     text-decoration: none;
     color:white;
     transition: 0.3s;

@@ -3,6 +3,23 @@
 /* Modelo para tablets*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
+
+    #burguer {
+        display: none;
+    }
+
+    #categorias .abas  {
+        display: block;
+        text-align: center;
+        transition: .3s;
+    }
+
+    menu.abas li {
+        padding: 7px;
+        font-size: 1em;
+        display: inline-block;
+    }
+
    header {
         flex-direction: column;
         gap: 30px;
@@ -20,7 +37,22 @@
 /* Modelo para telas grandes*/
 
 @media screen and (min-width: 1025px) {
-    .header {
+
+    #burguer {
+        display: none;
+    }
+
+    #categorias .abas {
+        display: block;
+        text-align: center;
+    }
+
+    menu.abas li {
+        display: inline-block;
+        padding: 7px;
+    }
+
+    header {
         flex-direction: column;
         text-align: center;
         gap: 10px;
