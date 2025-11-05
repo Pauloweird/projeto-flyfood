@@ -41,13 +41,6 @@
             color: #fff;
         }
 
-
-        .grid-hamb {
-            display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-             gap: 25px;
-        }
-
         .hamb-item {
             background: red url(https://i.pinimg.com/736x/4b/5b/41/4b5b41eafe60d5ea2f9cef23a8970020.jpg) center bottom;
             background-size: cover;
@@ -56,11 +49,16 @@
             padding: 15px;
             transition: transform 0.3s;
         }
+        .hamb-item h3 {
+            text-align: center;
+        }
 
         .hamb-item p {
             font-family: var(--fonte -paragrafos);
             font-size: 0.9em;
             background-color:  rgba(0, 0, 0, 0.397);
+            color: white;
+            text-align: center;
             padding: 10px;
             border-radius: 10px;
         }
@@ -97,9 +95,8 @@
     </nav>
 
     <main>
-        <section id="hamburguer" class="cardapio">
-            <h2 class="principal">Hambúrguer 🍔</h2>
-            <div class="grid-hamb">
+        <h2 class="principal">Hambúrguer 🍔</h2>
+        <section class="restaurantes">
                 <div class="hamb-item" id="card">
                     <h3>Artesanal</h3>
                     <img src="https://img.pikbest.com/png-images/20250518/gourmet-burger-with-cheese-lettuce-tomato-onion-sesame-bun_11695919.png!bw700" alt="hamburguer artesanal">
@@ -120,7 +117,6 @@
                     <p>Clássico, crocante e cheio de sabor em cada mordida.</p>
                     <button>R$ 27,00</button>
                 </div>
-            </div>
         </section>
 
         <section id="sobre">

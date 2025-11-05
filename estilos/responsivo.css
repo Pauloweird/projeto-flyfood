@@ -76,13 +76,13 @@
         max-width: 1100px;
         margin: auto;
     }
-    .card {
+    #card {
         max-width: 320px;
         margin: auto;
         padding: 15px;
     }
 
-    .card img {
+    #card img {
         max-width: 600px;
         height: auto;
         margin: 0 auto 10px auto;

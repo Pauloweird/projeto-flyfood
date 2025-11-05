@@ -63,10 +63,16 @@
             transform: scale(1.05);
         }
 
+        .pizza-item h3 {
+            text-align: center;
+        }
+
         .pizza-item p {
             font-size: 0.9em;
             background-color:  rgba(0, 0, 0, 0.397);
             padding: 10px;
+            color: white;
+            text-align: center;
             border-radius: 10px;
         }
 
@@ -80,13 +86,6 @@
         .pizza-me:hover {
             transform: scale(1.02);
         }
-        
-        .pizza-me p{
-            font-size: 0.9em;
-            background-color:  rgba(0, 0, 0, 0.397);
-            padding: 10px;
-            border-radius: 10px;
-        }
 
         .pizza-fra {
             border: 2px solid #d4af27;
@@ -97,13 +96,6 @@
 
         .pizza-fra:hover {
             transform: scale(1.02);
-        }
-
-        .pizza-fra p {
-            font-size: 0.9em;
-            background-color:  rgba(0, 0, 0, 0.397);
-            padding: 10px;
-            border-radius: 10px;
         }
 
         .preco {
@@ -155,29 +147,26 @@
         </nav>
 
     <main>
-        <section id="pizzas" class="cardapio">
-            <h2 class="principal">Pizzas 🍕</h2>
-
-                <div class="grid-pizzas">
-                    <div class="pizza-item">
+        <h2 class="principal">Pizzas 🍕</h2>
+        <section class="restaurantes">
+                    <div class="pizza-item" id="card">
                         <h3>Calabresa</h3>
                         <img src="https://png.pngtree.com/png-clipart/20241117/original/pngtree-pizza-pepperoni-png-image_17190225.png" alt="Pizza de calabresa">
                         <p>Molho de tomate,mussarela, calabresa e cebola</p>
                         <button class="preco">R$ 39,90</button>
                     </div>
-                    <div class="pizza-me">
+                    <div class="pizza-item">
                         <h3>Maguerita</h3>
                         <img src="https://png.pngtree.com/png-clipart/20250531/original/pngtree-delicious-margherita-pizza-with-fresh-basil-and-cherry-tomatoes-png-image_21104516.png" alt="Pizza de meguerita">
                         <p>molho de tomate, mussarela, tomate e manjericão fresco.</p>
                         <button class="preco">R$ 42,90</button>
                     </div>
-                    <div class="pizza-fra">
+                    <div class="pizza-item">
                         <h3>Frango/Catupiry</h3>
                         <img src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-cheese-and-chicken-pizza-png-image_14698365.png" alt="Pizza de Frango">
                         <p>Frango desfiado, catupiry original e orégano.</p>
                         <button class="preco">R$ 44,90</button>
                     </div>
-                </div>
         </section>
 
         <section id="sobre">
