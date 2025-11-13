@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlyFood</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
             <h1>FlyFood</h1>
@@ -23,13 +26,14 @@
 
         <nav id="categorias">
             <h2>Categorias</h2>
-            <ul class="abas">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu class="abas" id="itens">
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="hamburguer.html">Hambúrguer</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
                 <li><a href="sushi.html">Sushi</a></li>
                 <li><a href="bebidas.html">Bebidas</a></li>
-            </ul>
+            </menu>
         </nav>
 
     <main>
@@ -86,5 +90,6 @@
     <footer>
         <p>&copy; 2025 FlyFood - Criado por Paulo</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

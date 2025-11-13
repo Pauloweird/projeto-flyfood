@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi - FlyFood</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
         img {
             width: 100%;
@@ -35,23 +37,6 @@
             text-align: center;
         }
 
-        .cardapio h2 {
-            font-size: 2.9em;
-            text-align: center;
-            font-family: var(--fonte-padrao);
-            background-color: var(--cor-destque);
-            color: white;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        .grid-sushi {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
         .sushi-item {
             background: red url(https://i.pinimg.com/736x/6d/57/53/6d5753b6b1df0eae3c3a921f4a792a06.jpg) no-repeat center center;
             background-size: cover;
@@ -61,9 +46,14 @@
             transition: transform 0.3s;
         }
 
+        .sushi-item h3 {
+            text-align: center;
+        }
+
         .sushi-item p {
             background-color: rgba(0, 0, 0, 0.397);
             color: white;
+            text-align: center;
             font-size: 0.9em;
             font-family:  var(--fonte -paragrafos);
             padding: 10px;
@@ -73,7 +63,7 @@
             transform: scale(1.02);
         }
     </style>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
             <h1>FlyFood</h1>
@@ -90,19 +80,19 @@
 
     <nav id="categorias">
         <h2>Categorias</h2>
-            <ul class="abas">
+         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu class="abas" id="itens">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="hamburguer.html">hambúrguer</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
                 <li><a href="bebidas.html">Bebidas</a></li>
-            </ul>
+            </menu>
     </nav>
 
     <main>
-        <section class="cardapio">
-            <h2>Sushis 🍣</h2>
-            <div class="grid-sushi">
+        <h2 class="principal">Sushis 🍣</h2>
+        <section class="restaurantes">
                 <div class="sushi-item" id="card">
                     <h3>Nigiri</h3>
                     <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-nigiri-sushi-asian-food-png-image_13355918.png" alt="imagem de sushi nigiri">
@@ -123,7 +113,6 @@
                     <p>Arroz envolto em alga, recheado com coberturas frescas e saborosas.</p>
                     <button>R$ 10,00</button>
                 </div>
-            </div>
         </section>
 
         <section id="sobre">
@@ -141,5 +130,6 @@
     <footer>
         <p>&copy; 2025 FlyFood - Criado por Paulo</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

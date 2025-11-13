@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Pedidos | FlyFood</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
         * {
             margin: 0px;
@@ -57,10 +59,10 @@
         }
     </style>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
-            <h1>FlyFood</h1>
+            <h1><a href="index.html">FlyFood</a></h1>
             <p>Seu pedido chega voando</p>
         </div>
 
@@ -73,13 +75,14 @@
 
     <nav id="categorias">
         <h2>Categorias</h2>
-            <ul class="abas">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu class="abas" id="itens">
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="hamburguer.html">Hambúrguer</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
                 <li><a href="sushi.html">Sushi</a></li>
                 <li><a href="bebidas.html">Bebidas</a></li>
-            </ul>
+            </menu>
     </nav>
 
     <main>
@@ -113,9 +116,23 @@
             </div>
         </section>
 
-        <footer>
+    </main>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Nosso site conecta você aos melhores restaurantes da cidade, valorizando o comércio local</p>
+
+        <form action="#" method="post" autocomplete="on">
+            <label for="icoments">comentarios: </label>
+            <input type="text" name="comentarios" id="icoments" placeholder="Digite aqui">
+
+            <button id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
         <p>&copy; 2025 FlyFood - Criado por Paulo</p>
         </footer>
-    </main>
+        <script src="script.js"></script>
 </body>
 </html>

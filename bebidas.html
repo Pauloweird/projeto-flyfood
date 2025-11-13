@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebidas - FlyFood</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
         img {
             width: 100%;
         }
 
+        .coca {
+            width: 70%;
+            margin: auto;
+            display: block;
+        }
+
         .cardapio {
             padding: 15px;
             text-align: center;
-        }
-        .cardapio h2 {
-            background-color: var(--cor-destque);
-            color: white;
-            padding: 10px;
-            font-size: 2.9em;
-            font-family: var(--fonte-padrao);
-            margin-bottom: 10px;
-            border-radius: 10px;        
-        }
-
-        .grid-bebidas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
         }
         
         .bebidas-item {
@@ -39,7 +32,12 @@
             transition: transform 0.3s;
         }
 
+        .bebidas-item h3 {
+            text-align: center;
+        }
+
         .bebidas-item p {
+            text-align: center;
             background-color: rgba(0, 0, 0, 0.397);
             color: white;  
             padding: 10px;
@@ -72,7 +70,7 @@
          }
     </style>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
             <h1>FlyFood</h1>
@@ -89,19 +87,19 @@
 
     <nav id="categorias">
         <h2>Categorias</h2>
-            <ul class="abas">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu class="abas" id="itens">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pizzas.html">Pizza</a></li>
                 <li><a href="hamburguer.html">hambúrguer</a></li>
                 <li><a href="sorvetes.html">Sorvetes</a></li>
-                <li><a href="bebidas.html">Bebidas</a></li>
-            </ul>
+                <li><a href="sushi.html">Sushi</a></li>
+            </menu>
     </nav>
 
     <main>
-        <section class="cardapio">
-            <h2>Bebidas 🍹</h2>
-            <div class="grid-bebidas">
+        <h2 class="principal">Bebidas 🍹</h2>
+        <section class="restaurantes">
                 <div class="bebidas-item" id="card">
                     <h3>Suco de laranja</h3>
                     <img src="https://png.pngtree.com/png-clipart/20241004/original/pngtree-orange-juice-in-a-glass-with-straw-and-an-png-image_16198060.png" alt="Suco de laranja">
@@ -118,11 +116,10 @@
 
                 <div class="bebidas-item" id="card">
                     <h3>Coca-cola</h3>
-                    <img src="https://static.vecteezy.com/system/resources/previews/036/573/453/non_2x/a-can-of-coca-cola-drink-isolated-free-png.png" alt="imagem de coca-cola">
+                    <img src="https://static.vecteezy.com/system/resources/previews/036/573/453/non_2x/a-can-of-coca-cola-drink-isolated-free-png.png" alt="imagem de coca-cola" class="coca">
                     <p>Coca-Cola gelada, sabor único que combina com qualquer momento</p>
                     <button>R$ 7,00</button>
                 </div>
-            </div>
         </section>
 
         <section id="sobre">
@@ -140,5 +137,6 @@
     <footer>
         <p>&copy; 2025 FlyFood - Criado por Paulo</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
